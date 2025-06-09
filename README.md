@@ -4,7 +4,7 @@
 
 NOTE: OpenID v2 is *not* OpenID Connect (OIDC).  OpenID v2, finalized in 2007, is the predecessor standard. OIDC, which began formulation in 2011, is the successor standard. OpenID v2 is *not* based on OAuth 2, while OIDC is.  OAuth 2 didn't even exist when OpenID v2 was finalized.  Both OpenID v2 and OIDC  standards are governed by OpenID.net.  And with that out of the way...
 
-I recently assumed the maintainer role for the [omniauth-openid](https://github.com/omniauth/omniauth-openid) gem, and a new patch release is out now, the first in several years. The primary purpose of the release is to prepare users for the next release, which will be a major version bump.
+I recently assumed the maintainer role for the [omniauth-openid](https://github.com/ruby-openid/omniauth-openid) gem, and a new patch release is out now, the first in several years. The primary purpose of the release is to prepare users for the next release, which will be a major version bump.
 
 Before delving further into the new release though...
 
@@ -39,9 +39,9 @@ GitHub Actions provides continuous integration. A vast test matrix covering all 
 
 omniauth-openid version 3.0.0, which I expect to release soon, will:
 - switch from dead tools to living tools
-  - [rack-openid](https://github.com/grosser/rack-openid) (dead for 12 years) &rarr; [rack-openid2](https://github.com/oauth-xx/rack-openid2) (rewritten, modernized, drop-in-replacement)
-  - [ruby-openid](https://github.com/openid/ruby-openid) (archived & dead for 6 years) &rarr; [ruby-openid2](https://github.com/oauth-xx/ruby-openid2) (rewritten, modernized, drop-in-replacement)
-  - NOTE: these `*-openid2` gems were created by me to underpin my refactored and fully modernized [open_id_authentication](https://github.com/oauth-xx/open_id_authentication) gem, and rewritten, modernized [masq2](https://github.com/oauth-xx/masq2) OpenID Server Rails Engine gem
+  - [rack-openid](https://github.com/grosser/rack-openid) (dead for 12 years) &rarr; [rack-openid2](https://github.com/ruby-openid/rack-openid2) (rewritten, modernized, drop-in-replacement)
+  - [ruby-openid](https://github.com/openid/ruby-openid) (archived & dead for 6 years) &rarr; [ruby-openid2](https://github.com/ruby-openid/ruby-openid2) (rewritten, modernized, drop-in-replacement)
+  - NOTE: these `*-openid2` gems were created by me to underpin my refactored and fully modernized [open_id_authentication](https://github.com/ruby-openid/open_id_authentication) gem, the rewritten, modernized [masq2](https://github.com/ruby-openid/masq2) (OpenID Server Rails Engine) gem, and the rewritten, modernized [rots](https://github.com/ruby-openid/rots) (Ruby OpenID Test Server) gem
 - drop support for MRI Ruby 2.4, 2.5. 2.6
 - drop support for JRuby 9.2, 9.3
 
